@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="IlhamRP" />
+  <meta name="keywords" content="HTML, CSS dan JS" />
+  <meta name="description" content="Web Statis - Pendaftaran Event Kampus" />
+  <title>LinuxConf26 | Campus Event</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="header1">
+      <p class="webDemo">DEMO WEBSITE EVENT KAMPUS</p>
+      <p class="webDemo">TUGAS - UAS S1</p>
+    </div>
+  </header>
+
+  <div class="container-1">
+
+    <main>
+
+      <!-- SLIDE 1 -->
+      <div class="slide1 slides" id="s1">
+
+        <div class="navEventLogo">
+          <div class="logoBoxEvent">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo">
+          </div>
+          <span class="logoTextEvent">LinuxConf26</span>
+        </div>
+
+        <div class="mainEventTitle">
+          <h1>LinuxConf26: Into the Kernel</h1>
+          <hr style="margin: 55px 0 25px 0;" />
+          <div class="mainGrid">
+            <div class="mainEventDateLocation">
+              <h2 class="barisInfo">
+                <span class="ikon">🕒</span>
+                <span class="teksDetails">
+                  <span>24 March 2026</span>
+                </span>
+              </h2>
+
+              <h2 class="barisInfo">
+                <span class="ikon">📍</span>
+                <span class="teksDetails">
+                  <span>Aula Kampus,</span>
+                  <span>STIKOM EL RAHMA,</span>
+                  <span>Kota Bogor</span>
+                </span>
+              </h2>
+            </div>
+            <div class="mainEventDescription">
+              <p>
+                Melalui tema <strong>'Into the Kernel'</strong>, LinuxConf26 hadir sebagai tempat bertemunya para inovator di lingkungan kampus. Kami mengajak seluruh mahasiswa, praktisi, dan penikmat teknologi untuk mengeksplorasi sistem operasi
+                lebih jauh lagi.
+              </p>
+              <p>
+                Mari bergabung dalam rangkaian acara ini untuk bersama-sama mendalami ekosistem Open Source.
+              </p>
+              <a href="#s3" class="btnRegister">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr style="margin: 2px 0 2px 0;" class="slideLine" />
+
+      <!-- SLIDE 2 -->
+      <div class="slide2 slides" id="s2">
+
+        <h1>Topics</h1>
+
+        <div class="boxs2">
+          <div class="box2">
+            <div class="contentBox">
+              <img src="https://www.gnu.org/graphics/heckert_gnu.small.png" alt="GNU Logo" width="80">
+              <h3>GNU Project</h3>
+              <p>The Operating System</p>
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="contentBox">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo" width="80">
+              <h3>Linux Kernel</h3>
+              <p>The Heart of the OS</p>
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="contentBox">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/512px-GPLv3_Logo.svg.png" alt="GPL Logo" width="80">
+              <h3>GPL License</h3>
+              <p>Free Software Foundation</p>
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="contentBox">
+              <div class="iconPlaceholder">🌐</div>
+              <h3>Community</h3>
+              <p>The Power of Open Source</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr style="margin: 2px 0 2px 0;" class="slideLine" />
+
+      <!-- SLIDE 3 -->
+      <div class="slide3 slides" id="s3">
+
+        <div class="formEvent">
+
+          <div class="formGrid">
+
+            <div class="regForm">
+              <form class="myForm" id="registrationForm">
+                <fieldset>
+                  <legend>FORM PENDAFTARAN</legend>
+
+                  <div class="formEventTitle">
+                    LinuxConf26
+                  </div>
+
+                  <hr style="margin: 2px 0 2px 0;" />
+
+                  <!-- Input type text dan tanpa required Semua, karena validasi nya di javascript -->
+                  <label for="nama">Nama Lengkap</label>
+                  <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" />
+                  <span class="error" id="namaError">Nama lengkap wajib diisi</span>
+
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Email" />
+                  <span class="error" id="emailError">Email harus mengandung karakter '@ dan .' contoh: test123@yahoo.id</span>
+
+                  <label for="hp">Nomor HP</label>
+                  <input type="text" id="hp" name="hp" placeholder="Nomor HP" />
+                  <span class="error" id="hpError">Nomor HP hanya boleh berisi angka dan maksimum 15 digit</span>
+
+                  <label for="kategori">Kategori Peserta *</label>
+                  <select class="formSelect" id="kategori" name="kategori">
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Umum">Umum</option>
+                  </select>
+                  <span class="error" id="kategoriError">Kategori peserta wajib dipilih</span>
+
+                  <button type="submit" class="btnSubmit" id="submitBtn">Daftar Sekarang</button>
+
+                  <div class="message" id="message"></div>
+
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="regOutput">
+
+              <section class="listPeserta">
+                <h2>Daftar Peserta Terdaftar</h2>
+                <p class="pesertaJumlah">Total Peserta: <strong id="partisipasiJumlah">0</strong> / 50</p>
+                <div class="peserta" id="partisipasiList"></div>
+              </section>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </main>
+
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-text-1">
+      <div class="copyright-1">
+        Copyright © 2025
+      </div>
+      <div class="author-1">
+        <span style="color: #fff;"> <!-- Contoh CSS Inline -->
+          Author
+        </span>
+        By ILHAM RP
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

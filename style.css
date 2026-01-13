@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #1A1A1A;
+}
+
+.container-1 {
+  margin-top: 0;
+  margin-left: 4rem; /* Properti untuk mengatur ukuran margin */
+  margin-right: 4rem;
+  z-index: 3;
+}
+
+.slides {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.slideLine {
+  border: none;
+  height: 1.5px;
+  background: #444;
+}
+
+/* DEMO NAVBAR */
+
+header {
+  position: sticky; /* Agar Posisi Header selalu nempel diatas layar */
+  background: #000;
+  padding: 6px;
+  top: 0; /* Properti pendukung position: sticky */
+  z-index: 11; /* Untuk mengatur posisi Layer */
+
+}
+
+.header1 {
+  display: flex; /*  properti display dan nilai flex berfungsi untuk mengaktifkan model tata letak FlexBox */
+  justify-content: space-between; /* Agar posisi isi Header nya kanan dan kiri */
+  align-items: center; /* Biar Posisi nya ke tengah tapi secara middle */
+  margin: 0 3.5rem 0 3.5rem; /* Margin Kanan dan Kiri */
+}
+
+.webDemo {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* SLIDE 1 */
+
+.slide1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.navEventLogo {
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-start;
+  width: 100%;
+  background-color: #1A1A1A;
+  margin-bottom: 60px;
+}
+
+.logoBoxEvent {
+  background-color: #E95420;
+  padding: 14px 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.logoBoxEvent img {
+  height: 26px;
+  width: auto;
+  margin: 0;
+}
+
+.logoTextEvent {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-left: 4px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.mainEventTitle {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.mainEventTitle h1 {
+  color: #fff;
+  font-weight: 100;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: 1px;
+  transform: scaleY(1.1);
+  margin: 0;
+}
+
+.mainEventTitle hr {
+  border: none;
+  height: 1px;
+  background: #444;
+  margin: 40px 0;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.mainEventDateLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.barisInfo {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  color: #fff;
+}
+
+.ikon {
+  font-size: 1.3rem;
+  width: 30px;
+  text-align: center;
+}
+
+.teksDetails span {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.mainEventDescription p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0 0 20px 0;
+  font-size: 1.05rem;
+}
+
+.btnRegister {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #008013;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnRegister:hover {
+  background: rgba(9, 92, 21, 1);
+}
+
+/* SLIDE 2 */
+
+.slide2 {
+  align-content: center;
+}
+
+.slide2 h1 {
+  color: #fff;
+  font-weight: 100;
+  font-size: clamp(2.5rem, 3vw, 4.5rem);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+}
+
+.boxs2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.box2 {
+  min-height: 280px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.box2:hover {
+  transform: translateY(-10px);
+  border-color: #00fffc;
+  box-shadow: 0 0 25px rgba(0, 255, 252, 0.2);
+}
+
+.box2 img {
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.1));
+}
+
+.contentBox h3 {
+  color: #18b3b1;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contentBox p {
+  color: #bbbbbb;
+  font-size: 0.9rem;
+}
+
+.iconPlaceholder {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+/* SLIDE 3 */
+
+.slide3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 2%;
+}
+
+.formEvent {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* KUNCI AGAR RESPONSIF MOBILE TANPA MEDIA QUERY GUYS */
+  gap: 50px;
+  align-items: start;
+}
+
+.myForm legend {
+  background: #E95420; /* Warna oranye identitas Linux */
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.myForm fieldset {
+  display: flex;
+  flex-direction: column;
+  background: #ededed;
+  border: 0px;
+  border-radius: 20px;
+  padding: 1.5rem;
+  gap: 5px;
+
+}
+
+.formEventTitle {
+  font-weight: 100;
+  font-size: clamp(2.5rem, 2vw, 4.5rem);
+  letter-spacing: 0.2rem;
+  transform: scaleY(1.2);
+}
+
+.myForm input {
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #534f4f;
+  outline: none;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.myForm input:focus {
+  border: 2px solid rgb(90, 127, 230);
+  outline: none;
+}
+
+.myForm .error {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: 1px;
+  display: none;
+}
+
+.myForm label {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.myForm .formSelect {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ffffff;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnSubmit {
+  background: linear-gradient(135deg, #71eb66 0%, #0ba30c 100%);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 80%;
+  margin: 8px auto; /* Posisi Tombol ke tengah */
+  transition: transform 0.2s;
+}
+
+.btnSubmit:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #0ba30c 0%, #71eb66 100%);
+}
+
+.btnSubmit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Tampilan Pesan */
+.message {
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.regOutput {
+  padding: 10px;
+  border-left: 2px solid #444;
+}
+
+.listPeserta {
+  background: transparent;
+  padding: 15px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #eee;
+}
+
+.listPeserta h2 {
+  color: #e5e6f4;
+  margin-bottom: 20px;
+}
+
+.pesertaJumlah {
+  color: #30aa0c;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.peserta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pesertaCard {
+  background: #343131;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.pesertaCard h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pesertaCard p {
+  color: #ccc;
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2D2D2D;
+}
+
+.foot-text-1 {
+  display: flex;
+  justify-content: flex-end; /* Agar posisi isi Footer nya ke kanan */
+  margin: 0 5rem 0 5rem; /* Margin Kanan dan Kiri */
+  padding: 10px;
+  font-weight: bold;
+}
+.copyright-1 {
+  color: #fff;
+  margin-right: auto; /* Agar posisi Text Copyright nya ke kiri kebalikan dari kanan */
+}
+.author-1 {
+  color: #1A1A1A;
+}
